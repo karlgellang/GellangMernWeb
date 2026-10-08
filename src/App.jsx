@@ -52,7 +52,7 @@ function App() {
       await getStudents();
     } catch (error) {
       console.log(error);
-      alert("Failed to delete student");
+      alert("FAILED TO DELETE THE STUDENT");
     }
   };
  
@@ -77,22 +77,22 @@ function App() {
   return (
     <div>
       <h1 >Student Management System</h1>
-      <h2 >{editingId ? "Edit Student" : "Add Student"}</h2>
+      <h2 >{editingId ? "EDIT STUDENT" : "ADD STUDENT"}</h2>
  
       <p>Enter Name: </p>
-      <input placeholder="Enter Student Name" value={name} onChange={(e) => setName(e.target.value)} />
+      <input placeholder="ENTER YOUR NAME" value={name} onChange={(e) => setName(e.target.value)} />
  
       <p>Enter Course: </p>
-      <input placeholder="Enter Student Course" value={course} onChange={(e) => setCourse(e.target.value)} />
+      <input placeholder="ENTER YOUR COURSE" value={course} onChange={(e) => setCourse(e.target.value)} />
  
       <p>Enter Age</p>
-      <input type="number" placeholder="Age" value={age} onChange={(e) => setAge(e.target.value)} />
+      <input type="number" placeholder="ENTER YOUR AGE" value={age} onChange={(e) => setAge(e.target.value)} />
       <br/>
      
       <br/>
       <button onClick={handleSubmit}>
  
-        {editingId ? "Update Student" : "Add Student"}
+        {editingId ? "UPDATE STUDENT" : "ADD STUDENT"}
       </button>
  
       <h2>Students</h2>
